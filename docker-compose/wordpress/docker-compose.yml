@@ -31,4 +31,4 @@ services:
 networks: 
     wpsite:
 volumes: 
-    db_data: {}
+    db_data:
