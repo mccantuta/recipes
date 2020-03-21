@@ -39,3 +39,8 @@ Find volumes not associated to any container
 ```
 docker volume ls -f dangling=true
 ```
+## Execute commands
+Execute bash on docker container
+```
+sudo docker exec -it wordpress_db_1 bash -l
+```
