@@ -42,5 +42,5 @@ docker volume ls -f dangling=true
 ## Execute commands
 Execute bash on docker container
 ```
-sudo docker exec -it wordpress_db_1 bash -l
+sudo docker exec -it <containerName> bash -l
 ```
