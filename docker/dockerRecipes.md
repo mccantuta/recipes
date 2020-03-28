@@ -44,3 +44,8 @@ Execute bash on docker container
 ```
 sudo docker exec -it <containerName> bash -l
 ```
+## Execute PostgresSQL database
+Execute PostgreSql database as docker container
+```
+docker run --rm --name pg-docker -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
+```
