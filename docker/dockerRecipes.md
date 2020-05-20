@@ -42,13 +42,13 @@ docker volume ls -f dangling=true
 ## Execute commands
 Execute bash on docker container
 ```
-sudo docker exec -it <containerName> bash -l
+docker exec -it <containerName> bash -l
 docker exec -it <containerName> /bin/bash
 ```
-## Execute commands
-Execute bash on docker container
+## Copy a file to container
+Copy a file from local to container
 ```
-docker cp </path/filename> pg-docker:</toPath/toFilename>
+docker cp </path/filename> <containerName>:</toPath/toFilename>
 ```
 ## Execute PostgresSQL database
 Execute PostgreSql database as docker container
