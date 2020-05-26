@@ -26,6 +26,15 @@ Delete all containers
 ```
 docker rm $(docker ps -a -q)
 ```
+Build a container
+```
+docker build -t myorg/myapp .
+```
+Stop a container
+```
+docker stop <containerName>
+```
+
 ## Volumes
 List all volumes
 ```
